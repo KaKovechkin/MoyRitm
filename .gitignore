@@ -7,3 +7,7 @@ __pycache__/
 dist/
 build/
 .DS_Store
+database.db
+.venv/
+.venv/*
+

@@ -15,7 +15,7 @@ async def main():
     )
 
     dp = Dispatcher()
-    dp.include_router(router)
+    dp.include_router(router) 
 
     scheduler = AsyncIOScheduler()
     await handlers.setup_scheduler(scheduler, bot)
@@ -23,7 +23,6 @@ async def main():
 
     print("Бот запущен!")
     await dp.start_polling(bot)
-
-
+    
 if __name__ == "__main__":
     asyncio.run(main())
